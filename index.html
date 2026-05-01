@@ -1,65 +1,155 @@
 <html>
 <head>
+<title>Dinga Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
-    background: linear-gradient(to right, #0f172a, #1e293b);
-    color: white;
-    text-align: center;
-    font-family: Arial;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
 }
 
-h1, h2 {
+/* NAV */
+nav {
+    background: #111827;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
     color: gold;
-    margin-top: 30px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    margin-top: 60px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* PROFILE IMAGE */
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid gold;
+    object-fit: cover;
+}
+
+/* HEADINGS */
+h1 {
+    color: gold;
+    font-size: 45px;
 }
 
 p {
+    color: #cbd5e1;
     font-size: 18px;
-    color: #ccc;
 }
 
-img {
-    width: 250px;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-a {
-    color: gold;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
-}
-
-a:hover {
-    color: white;
+/* CARDS */
+.card {
+    background: #111827;
+    width: 80%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.2);
     transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* BUTTON */
+button {
+    padding: 12px 25px;
+    background: gold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
 }
 </style>
 </head>
 
 <body>
 
-<div style="background:#111827; padding:15px;">
+<!-- NAV -->
+<nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Hi, I'm Dinga 👋</h1>
+    <p>Web Developer | Designer | Future Full Stack Dev 🔥</p>
+
+    <!-- PROFILE IMAGE -->
+    <img src="profile.jpg" class="profile">
+
+    <br>
+
+    <button onclick="alert('Thanks for visiting my portfolio 🔥')">
+        Click Me
+    </button>
 </div>
 
-<h1>Hi, I'm a Web Developer 🔥</h1>
-<p>I create simple and modern websites</p>
+<!-- ABOUT -->
+<div class="card">
+    <h2>About Me</h2>
+    <p>I am learning web development and building my first portfolio website.</p>
+</div>
 
-<img src="https://picsum.photos/300">
+<!-- SKILLS -->
+<div class="card">
+    <h2>My Skills</h2>
+    <p>HTML | CSS | Beginner JavaScript</p>
+</div>
 
-<h2>My Skills</h2>
-<p>HTML | CSS | Website Design</p>
+<!-- PROJECTS -->
+<div class="card">
+    <h2>My Projects</h2>
+    <p>✔ Portfolio Website (this one)</p>
+    <p>✔ More coming soon 🚀</p>
+</div>
 
-<h2>My Work</h2>
-<p>This is my first website project</p>
+<!-- CTA -->
+<div class="card">
+    <h2>Work With Me</h2>
+    <p>Contact me if you need a website built.</p>
 
-<a href="contact.html">Contact Me</a>
+    <button onclick="location.href='contact.html'">
+        Contact Me
+    </button>
+</div>
 
 </body>
 </html>
