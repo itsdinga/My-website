@@ -1,79 +1,93 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Contact - Dinga Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Contact - Dinga Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-    text-align: center;
-}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+        }
 
-nav {
-    background: #111827;
-    padding: 15px;
-}
+        nav {
+            background: #111827;
+            padding: 15px;
+        }
 
-nav a {
-    color: gold;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
+        nav a {
+            color: gold;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
 
-nav a:hover {
-    color: white;
-}
+        nav a:hover {
+            color: white;
+        }
 
-h1 {
-    margin-top: 60px;
-    color: gold;
-}
+        h1 {
+            margin-top: 60px;
+            color: gold;
+            font-size: 40px;
+        }
 
-input, textarea {
-    width: 80%;
-    padding: 12px;
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
-}
+        form {
+            margin-top: 30px;
+        }
 
-button {
-    padding: 12px 25px;
-    background: gold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
+        input, textarea {
+            width: 80%;
+            padding: 12px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+        }
 
-button:hover {
-    background: white;
-    color: black;
-}
-</style>
+        button {
+            padding: 12px 25px;
+            background: gold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<h1>Contact Me</h1>
+    <!-- TITLE -->
+    <h1>Contact Me</h1>
 
-<form action="https://formspree.io/f/xvzlgrgp" method="POST">
-    <input type="text" name="name" placeholder="Your Name"><br>
-    <input type="email" name="email" placeholder="Your Email"><br>
-    <textarea name="message" placeholder="Your Message"></textarea><br>
-    <button type="submit">Send Message</button>
-</form>
+    <!-- FORM -->
+    <form action="https://formspree.io/f/xvzlgrgp" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+
+        <input type="email" name="email" placeholder="Your Email" required><br>
+
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
 
 </body>
 </html>
