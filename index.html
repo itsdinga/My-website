@@ -1,155 +1,154 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Dinga Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Dinga Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-    text-align: center;
-}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+        }
 
-/* NAVBAR */
-nav {
-    background: #111827;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-}
+        nav {
+            background: #111827;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
 
-nav a {
-    color: gold;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
+        nav a {
+            color: gold;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
 
-nav a:hover {
-    color: white;
-}
+        nav a:hover {
+            color: white;
+        }
 
-/* HERO */
-.hero {
-    margin-top: 60px;
-    animation: fadeIn 1s ease-in;
-}
+        .hero {
+            margin-top: 60px;
+        }
 
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
-}
+        h1 {
+            color: gold;
+            font-size: 45px;
+        }
 
-/* PROFILE IMAGE */
-.profile {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    border: 3px solid gold;
-    object-fit: cover;
-}
+        p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
 
-/* HEADINGS */
-h1 {
-    color: gold;
-    font-size: 45px;
-}
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid gold;
+            object-fit: cover;
+        }
 
-p {
-    color: #cbd5e1;
-    font-size: 18px;
-}
+        .card {
+            background: #111827;
+            width: 80%;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255,215,0,0.2);
+            transition: 0.3s;
+        }
 
-/* CARDS */
-.card {
-    background: #111827;
-    width: 80%;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255,215,0,0.2);
-    transition: 0.3s;
-}
+        .card:hover {
+            transform: translateY(-8px);
+        }
 
-.card:hover {
-    transform: translateY(-8px);
-}
+        button {
+            padding: 12px 25px;
+            background: gold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+        }
 
-/* BUTTON */
-button {
-    padding: 12px 25px;
-    background: gold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: white;
-    color: black;
-}
-</style>
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>Hi, I'm Dinga 👋</h1>
-    <p>Web Developer | Designer | Future Full Stack Dev 🔥</p>
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Hi, I'm Dinga 👋</h1>
+        <p>Web Developer | Designer | Future Full Stack Dev 🔥</p>
 
-    <!-- PROFILE IMAGE (IMPORTANT) -->
-    <img src="profile.jpg.jpeg" class="profile">
+        <img src="profile.jpg" class="profile">
 
-    <br>
+        <br>
 
-    <button onclick="alert('Welcome to my portfolio 🔥')">
-        Click Me
-    </button>
-</div>
+        <button onclick="alert('Welcome to my portfolio 🔥')">
+            Click Me
+        </button>
+    </div>
 
-<!-- ABOUT -->
-<div class="card">
-    <h2>About Me</h2>
-    <p>I am learning web development and building my first portfolio website.</p>
-</div>
+    <!-- ABOUT -->
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am learning web development and building modern websites step by step.</p>
+    </div>
 
-<!-- SKILLS -->
-<div class="card">
-    <h2>My Skills</h2>
-    <p>HTML | CSS | Beginner JavaScript</p>
-</div>
+    <!-- SKILLS -->
+    <div class="card">
+        <h2>My Skills</h2>
+        <p>HTML | CSS | Beginner JavaScript</p>
+    </div>
 
-<!-- PROJECTS -->
-<div class="card">
-    <h2>My Projects</h2>
-    <p>✔ Portfolio Website (this one)</p>
-    <p>✔ More coming soon 🚀</p>
-</div>
+    <!-- PROJECTS -->
+    <div class="card">
+        <h2>My Projects</h2>
+        <p>✔ Portfolio Website (this one)</p>
+        <p>✔ More coming soon 🚀</p>
+    </div>
 
-<!-- CTA -->
-<div class="card">
-    <h2>Work With Me</h2>
-    <p>Contact me if you need a website built.</p>
+    <!-- SERVICES -->
+    <div class="card">
+        <h2>My Services</h2>
+        <p>✔ Website Design (HTML & CSS)</p>
+        <p>✔ Portfolio Websites</p>
+        <p>✔ Landing Pages</p>
+        <p>✔ Website Fix & Edit</p>
+    </div>
 
-    <button onclick="location.href='contact.html'">
-        Contact Me
-    </button>
-</div>
+    <!-- HIRE ME -->
+    <div class="card">
+        <h2>Hire Me</h2>
+        <p>I can build a clean and modern website for you.</p>
+        <p>Fast delivery • Affordable price • Clean design</p>
+
+        <button onclick="location.href='contact.html'">
+            Hire Me Now
+        </button>
+    </div>
 
 </body>
 </html>
