@@ -2,16 +2,19 @@
 <head>
 <title>About - Dinga Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
     text-align: center;
-    font-family: Arial;
-    margin: 0;
-    padding: 0;
 }
 
+/* NAV */
 nav {
     background: #111827;
     padding: 15px;
@@ -28,9 +31,20 @@ nav a:hover {
     color: white;
 }
 
+/* HEADER */
 h1 {
-    color: gold;
     margin-top: 60px;
+    color: gold;
+}
+
+/* CARD */
+.card {
+    background: #111827;
+    width: 80%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.2);
 }
 </style>
 </head>
@@ -45,7 +59,23 @@ h1 {
 
 <h1>About Me</h1>
 
-<p>This is my first website project. I am learning web development step by step 🔥</p>
+<div class="card">
+    <p>
+        Hi, I'm Dinga 👋<br><br>
+        I am a beginner web developer learning how to build modern websites.<br><br>
+        I enjoy creating simple and clean designs using HTML and CSS.<br><br>
+        This portfolio is my first project and I will keep improving it as I learn more 🔥
+    </p>
+</div>
+
+<div class="card">
+    <h2>My Goals</h2>
+    <p>
+        ✔ Become a professional web developer<br>
+        ✔ Build websites for clients<br>
+        ✔ Learn JavaScript and backend development<br>
+    </p>
+</div>
 
 </body>
 </html>
